@@ -22,6 +22,7 @@ modules:
         - niri
         - noctalia-shell
         - greetd
+        - tuigreet
 
   - type: files
     files:
