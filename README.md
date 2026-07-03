@@ -7,7 +7,7 @@ A Fedora Atomic custom image combining the [Niri](https://niri-wm.github.io/niri
 **Key packages:**
 - [niri](https://niri-wm.github.io/niri/) — scrollable-tiling Wayland compositor
 - [noctalia-shell](https://noctalia.dev) — desktop shell for Niri
-- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — login manager
+- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — login prompt that launches the Niri/Noctalia session directly
 
 ## Installation
 
@@ -31,5 +31,3 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 > [!NOTE]
 > Image signing is not yet enabled but is planned for a future release.
-
-

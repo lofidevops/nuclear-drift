@@ -1,0 +1,38 @@
+layout {
+    background-color "transparent"
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+spawn-at-startup "qs" "-c" "noctalia-shell"
+
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}
+
+layer-rule {
+    match namespace="^noctalia-overview.*$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^noctalia-wallpaper.*$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+    background-effect {
+        xray false
+    }
+}
+
+window-rule {
+    background-effect {
+        blur true
+        xray false
+    }
+}

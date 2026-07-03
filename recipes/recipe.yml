@@ -23,3 +23,13 @@ modules:
         - noctalia-shell
         - greetd
         - tuigreet
+
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
