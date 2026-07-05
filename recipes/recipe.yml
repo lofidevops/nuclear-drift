@@ -2,8 +2,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: noctiri-drift
-# description will be included in the image's metadata
-description: Fedora Atomic + Universal Blue base-main + Niri + Noctalia
+description: An atomic desktop combining the Niri compositor and Noctalia shell.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/base-main
