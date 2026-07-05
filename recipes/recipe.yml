@@ -17,10 +17,11 @@ modules:
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
-        - terra-release
+        - fish
+        - greetd
         - niri
         - noctalia-shell
-        - greetd
+        - terra-release
         - tuigreet
 
   - type: files
