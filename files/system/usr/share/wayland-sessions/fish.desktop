@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Fish Shell
 Comment=Start a Fish login shell
-Exec=/usr/bin/fish-session
+Exec=/usr/bin/fish -l
 Type=Application
