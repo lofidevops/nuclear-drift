@@ -102,7 +102,7 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 **Key packages:**
 - [niri](https://niri-wm.github.io/niri/) — scrollable-tiling Wayland compositor
 - [noctalia-shell](https://noctalia.dev) — desktop shell for Niri
-- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — login prompt that launches the Niri/Noctalia session directly
+- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — system login prompt
 
 ## Verification
 
