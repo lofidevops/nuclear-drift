@@ -1,13 +1,6 @@
 # Noctiri Drift &nbsp; [![build badge](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml)
 
-A Fedora Atomic custom image combining the [Niri](https://niri-wm.github.io/niri/) compositor and the [Noctalia](https://noctalia.dev) shell.
-
-**Base:** Fedora Atomic ([Universal Blue](https://universal-blue.org/) `base-main`)
-
-**Key packages:**
-- [niri](https://niri-wm.github.io/niri/) — scrollable-tiling Wayland compositor
-- [noctalia-shell](https://noctalia.dev) — desktop shell for Niri
-- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — login prompt that launches the Niri/Noctalia session directly
+An atomic desktop combining the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
 
 ## Preview
 
@@ -15,16 +8,13 @@ To preview Noctiri Drift without touching bare metal, you can run it inside a vi
 
 1. **Install GNOME Boxes** on your host machine.
 2. **Create a new virtual machine** using Fedora Silverblue (or any Fedora Atomic desktop).
-3. **Complete the Fedora install** inside the VM and log into the stock system once.
+3. **Complete the Fedora installation** inside the VM and log into the stock system once.
 
 Once you have a working Fedora Atomic VM, you're ready to rebase it to Noctiri Drift with the installation instructions below.
 
 ## Install
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
-
-You can follow these same steps on a VM or a physical machine; the only difference is where you installed Fedora Atomic.
+You can follow these installation steps on a VM or a physical machine; the only difference is where you installed Fedora Atomic.
 
 1. **Install Fedora Silverblue** (or any Fedora Atomic desktop) by following the preview instructions above or <a href="https://docs.fedoraproject.org/en-US/atomic-desktops/installation/">hardware instructions</a>.
 
@@ -104,6 +94,15 @@ If `podman pull` or `docker pull` fails, fix that first. It usually means:
 - A problem with the image itself.
 
 Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rpm-ostree rebase` are almost certainly in the rpm‑ostree/ostree tooling itself rather than access to Noctiri Drift.
+
+## Technical notes
+
+**Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image)
+
+**Key packages:**
+- [niri](https://niri-wm.github.io/niri/) — scrollable-tiling Wayland compositor
+- [noctalia-shell](https://noctalia.dev) — desktop shell for Niri
+- [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — login prompt that launches the Niri/Noctalia session directly
 
 ## Verification
 
