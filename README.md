@@ -1,6 +1,6 @@
-# Noctiri Drift &nbsp; [![build badge](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml)
+# Nuclear Drift &nbsp; [![build badge](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml)
 
-An atomic desktop combining the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
+An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
 
 ## Preview
 
