@@ -1,4 +1,4 @@
-# Nuclear Drift &nbsp; [![build badge](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/noctiri-drift/actions/workflows/build.yml)
+# Nuclear Drift <img src="logo.png" alt="Polymita sulphurosa" style="height:1em; vertical-align:text-bottom;">
 
 An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
 
@@ -97,6 +97,10 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 
 ## Technical notes
 
+[![build badge](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml)
+
+[You can build your own!](https://blue-build.org)
+
 **Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image)
 
 **Key packages:**
@@ -108,3 +112,7 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 
 > [!NOTE]
 > Image signing is not yet enabled but is planned for a future release.
+
+## Colophon
+
+*Polymita sulphurosa* is a critically endangered Cuban snail.
