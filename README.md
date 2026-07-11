@@ -4,13 +4,13 @@ An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compo
 
 ## Preview
 
-To preview Noctiri Drift without touching bare metal, you can run it inside a virtual machine:
+To preview Nuclear Drift without touching bare metal, you can run it inside a virtual machine:
 
 1. **Install GNOME Boxes** on your host machine.
 2. **Create a new virtual machine** using Fedora Silverblue (or any Fedora Atomic desktop).
 3. **Complete the Fedora installation** inside the VM and log into the stock system once.
 
-Once you have a working Fedora Atomic VM, you're ready to rebase it to Noctiri Drift with the installation instructions below.
+Once you have a working Fedora Atomic VM, you're ready to rebase it to Nuclear Drift with the installation instructions below.
 
 ## Install
 
@@ -25,14 +25,14 @@ You can follow these installation steps on a VM or a physical machine; the only 
    sudo systemctl reboot
    ```
 
-   This puts your base system on the latest update before you switch to Noctiri Drift.
+   This puts your base system on the latest update before you switch to Nuclear Drift.
 
-3. **Validate access to the Noctiri Drift image**
+3. **Validate access to the Nuclear Drift image**
 
    First, confirm that the image is reachable and readable from your machine:
 
    ```sh
-   skopeo inspect --config docker://ghcr.io/lofidevops/noctiri-drift:latest
+   skopeo inspect --config docker://ghcr.io/lofidevops/nuclear-drift:latest
    ```
 
    - If this command succeeds, you know:
@@ -40,21 +40,21 @@ You can follow these installation steps on a VM or a physical machine; the only 
      - Your network and registry access to GitHub Container Registry are working.
    - If it fails, fix authentication or network issues before proceeding.
 
-4. **Rebase from Silverblue to Noctiri Drift**
+4. **Rebase from Silverblue to Nuclear Drift**
 
    In the same terminal:
 
    ```sh
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/lofidevops/noctiri-drift:latest
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/lofidevops/nuclear-drift:latest
    ```
 
    This tells Fedora's atomic system to:
 
-   - Pull the Noctiri Drift image from `ghcr.io`.
+   - Pull the Nuclear Drift image from `ghcr.io`.
    - Unpack it into an ostree deployment.
    - Set that deployment as the next root filesystem.
 
-5. **Reboot into Noctiri Drift**
+5. **Reboot into Nuclear Drift**
 
    Once the rebase completes:
 
@@ -62,7 +62,7 @@ You can follow these installation steps on a VM or a physical machine; the only 
    sudo systemctl reboot
    ```
 
-   After the reboot, you should be running the Noctiri Drift image. Your login screen and desktop session should now be provided by Noctiri Drift instead of stock Silverblue.
+   After the reboot, you should be running the Nuclear Drift image. Your login screen and desktop session should now be provided by Nuclear Drift instead of stock Silverblue.
 
 ## Update
 
@@ -78,8 +78,8 @@ sudo systemctl reboot
 If the rebase fails or you want to double‑check that the container image is valid, you can test it with Podman (or Docker):
 
 ```sh
-podman pull ghcr.io/lofidevops/noctiri-drift:latest
-# or docker pull ghcr.io/lofidevops/noctiri-drift:latest
+podman pull ghcr.io/lofidevops/nuclear-drift:latest
+# or docker pull ghcr.io/lofidevops/nuclear-drift:latest
 ```
 
 This:
@@ -93,7 +93,7 @@ If `podman pull` or `docker pull` fails, fix that first. It usually means:
 - GHCR authentication issues, or
 - A problem with the image itself.
 
-Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rpm-ostree rebase` are almost certainly in the rpm‑ostree/ostree tooling itself rather than access to Noctiri Drift.
+Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rpm-ostree rebase` are almost certainly in the rpm‑ostree/ostree tooling itself rather than access to Nuclear Drift.
 
 ## Technical notes
 
