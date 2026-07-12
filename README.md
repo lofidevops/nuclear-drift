@@ -1,14 +1,16 @@
 # Nuclear Drift <img src="logo.png" alt="Polymita sulphurosa" style="height:1em; vertical-align:text-bottom;">
 
 An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
+[You can build your own!](https://blue-build.org)
 
 ## Preview
 
 To preview Nuclear Drift without touching bare metal, you can run it inside a virtual machine:
 
-1. **Install GNOME Boxes** on your host machine.
-2. **Create a new virtual machine** using Fedora Silverblue (or any Fedora Atomic desktop).
-3. **Complete the Fedora installation** inside the VM and log into the stock system once.
+1. **Install Virtual Machine Manager (virt-manager)** on your host machine.
+3. **Create a new virtual machine** using Fedora Silverblue (or any Fedora Atomic desktop).
+4. **Complete the Fedora installation** inside the VM and log into the stock system once.
+5. **Enable 3D acceleration** and/or OpenGL. This is required for Niri.
 
 Once you have a working Fedora Atomic VM, you're ready to rebase it to Nuclear Drift with the installation instructions below.
 
@@ -98,8 +100,6 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 ## Technical notes
 
 [![build badge](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml)
-
-[You can build your own!](https://blue-build.org)
 
 **Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image)
 
