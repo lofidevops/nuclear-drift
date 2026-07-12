@@ -12,7 +12,7 @@ To preview Nuclear Drift without touching bare metal, you can run it inside a vi
 1. **Install Virtual Machine Manager (virt-manager)** on your host machine.
 3. **Create a new virtual machine** using Fedora Silverblue (or any Fedora Atomic desktop).
 4. **Complete the Fedora installation** inside the VM and log into the stock system once.
-5. **Enable 3D acceleration** and/or OpenGL. This is required for Niri.
+5. In the virtual machine settings, **enable 3D acceleration** and/or OpenGL. This is required for Niri.
 
 Once you have a working Fedora Atomic VM, you're ready to rebase it to Nuclear Drift with the installation instructions below.
 
