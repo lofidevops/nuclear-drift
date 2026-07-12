@@ -3,6 +3,8 @@
 An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
 [You can build your own!](https://blue-build.org)
 
+![Screenshot of the Nuclear Drift desktop](desktop.png)
+
 ## Preview
 
 To preview Nuclear Drift without touching bare metal, you can run it inside a virtual machine:
