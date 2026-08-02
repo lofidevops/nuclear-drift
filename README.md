@@ -1,6 +1,6 @@
 # Nuclear Drift <img src="logo.png" alt="Polymita sulphurosa" style="height:1em; vertical-align:text-bottom;">
 
-An immutable desktop featuring the [Niri](https://niri-wm.github.io/niri/) compositor and [Noctalia](https://noctalia.dev) shell.
+A tailored system with horizontal desktop flow and quiet daily updates.
 [You can build your own!](https://blue-build.org)
 
 ![Screenshot of the Nuclear Drift desktop](desktop.png)
@@ -103,11 +103,11 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 
 [![build badge](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml)
 
-**Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image)
+**Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image) plus [terra-pkg](https://terrapkg.com)
 
 **Key packages:**
-- [niri](https://niri-wm.github.io/niri/) — scrollable-tiling Wayland compositor
-- [noctalia-shell](https://noctalia.dev) — desktop shell for Niri
+- [niri](https://niri-wm.github.io/niri/) — scrollable tiling compositor
+- [noctalia-shell](https://noctalia.dev) — uncluttered desktop shell
 - [greetd](https://sr.ht/~kennylevinsen/greetd/) + [tuigreet](https://github.com/apognu/tuigreet) — system login prompt
 
 ## Verification
