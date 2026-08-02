@@ -103,7 +103,7 @@ Once `skopeo inspect` and `podman pull` both work, any remaining errors from `rp
 
 [![build badge](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml/badge.svg)](https://github.com/lofidevops/nuclear-drift/actions/workflows/build.yml)
 
-**Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image) plus [terra-pkg](https://terrapkg.com)
+**Base image:** `base-main` from [Universal Blue](https://universal-blue.org) (itself derived from Fedora's [Atomic Desktop](https://fedoraproject.org/atomic-desktops/) base image) plus [Terra packages](https://terrapkg.com)
 
 **Key packages:**
 - [niri](https://niri-wm.github.io/niri/) — scrollable tiling compositor
