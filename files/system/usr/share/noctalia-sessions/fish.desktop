@@ -3,3 +3,5 @@ Name=friendly interactive shell
 Comment=Start a fish login shell
 Exec=/usr/bin/fish --login
 Type=Application
+NoDisplay=true
+DesktopNames=NuclearDrift

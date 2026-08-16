@@ -3,6 +3,9 @@ layout {
 }
 
 debug {
+    // noctalia-shell currently sends XDG activation requests with an
+    // invalid serial; honoring them avoids broken focus-stealing until
+    // the shell is fixed upstream.
     honor-xdg-activation-with-invalid-serial
 }
 

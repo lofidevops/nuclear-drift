@@ -3,7 +3,7 @@ on:
   schedule:
     - cron:
         "00 06 * * *" # build at 06:00 UTC every day
-        # (20 minutes after last ublue images start building)
+        # (offset from ublue base image rebuilds; adjust if their schedule shifts)
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
@@ -34,6 +34,8 @@ jobs:
         uses: blue-build/github-action@v1.12
         with:
           recipe: ${{ matrix.recipe }}
+          # Image signing is intentionally disabled; cosign.pub is staged in
+          # the repo for future use. Re-enable with --sign once signing is wired up.
           build_opts: --no-sign
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
